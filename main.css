@@ -1,0 +1,52 @@
+html, body, .contain {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #000;
+  height: 10vh;
+}
+
+main {
+  align-items: center;
+  background-color: red;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+article {
+  background-color: orange;
+  height: 80%;
+  width: 45%;
+}
+
+aside {
+  background-color: blue;
+  height: 80%;
+  width: 45%;
+}
+
+footer {
+  background-color: pink;
+  height: 10vh;
+}
+
+@media screen and (max-width: 950px) {
+  main {
+    flex-direction: column;
+  }
+
+  aside, article {
+    width: 90%;
+  }
+}
